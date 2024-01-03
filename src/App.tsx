@@ -20,12 +20,12 @@ function App() {
   };
 
   return (
-    <div className="App m-24 text-left">
-      <h1 className="mb-12 font-medium text-left text-3xl">
+    <div className="App m-12 text-left">
+      <h1 className="mb-16 font-medium text-left text-3xl">
         Find Synonyms and Similar Words
       </h1>
-      <div className="mb-32 text-6xl">
-        &nbsp;📙 &nbsp; &nbsp; ↦ &nbsp; &nbsp; 📚📚📚
+      <div className="mb-32 sm:mb-32 text-4xl min-[480px]:text-6xl">
+        📙 &nbsp; ↦ &nbsp; 📚📚📚
       </div>
       <h3 className="text-left text-lg mb-8">
         Input a word below, then press
@@ -85,14 +85,19 @@ function App() {
           </label>
           <button
             className="
-              ml-4 
+              mt-8
+              min-[391px]:mt-0 
+              min-[391px]:ml-4 
               h-10 
               w-32 
               text-lime-50 
               bg-violet-600 
               rounded-md 
-              hover:text-lime-50hover:bg-violet-700 
-              hover:border-violet-700focus:border-teal-400focus:outline-none"
+              hover:text-lime-50 
+              hover:bg-violet-700 
+              hover:border-violet-700 
+              focus:border-teal-400 
+              focus:outline-none"
           >
             Submit
           </button>
