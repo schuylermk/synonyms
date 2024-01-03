@@ -45,7 +45,7 @@ function App() {
             id="word-input"
             onChange={(e) => setWord(e.target.value)}
             value={word}
-            placeholder="Enter a word"
+            placeholder="Enter word"
             required
             className="
             peer 
