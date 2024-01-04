@@ -1,6 +1,6 @@
 html, body, #root {
   height: 100vh;
-  /* padding: 2rem; */
+  scroll-behavior: smooth;
 }
 
 input:focus, textarea:focus, select:focus{

@@ -1,6 +1,6 @@
-import { useState } from "react";
-import "./App.css";
+import React, { useState, useRef, useEffect } from "react";
 import { useGetSynonyms } from "./hooks/useGetSynonyms";
+import "./App.css";
 
 function App() {
   const [word, setWord] = useState("");
@@ -13,11 +13,21 @@ function App() {
     getSynonyms(word);
   };
 
+  const scrollRef = useRef<number | null>(null);
+
   const handleSynonymClicked = (newWord: string) => {
     setFormSubmitted(true);
     setWord(newWord);
     getSynonyms(newWord);
+    scrollRef.current = window.scrollY;
   };
+
+  // Function to scroll to the synonyms list
+  useEffect(() => {
+    if (scrollRef.current !== null) {
+      window.scrollTo(0, scrollRef.current); // Restore scroll position
+    }
+  }, [synonyms]);
 
   return (
     <div className="App m-12 text-left">
