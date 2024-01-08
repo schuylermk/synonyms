@@ -29,6 +29,8 @@ function App() {
     }
   }, [synonyms]);
 
+  const hasSynonyms = synonyms.length > 0;
+
   return (
     <div className="App m-12 text-left">
       <h1 className="mb-16 font-medium text-left text-3xl">
@@ -118,7 +120,7 @@ function App() {
         <div>Loading...</div>
       ) : (
         <>
-          {synonyms.length ? (
+          {hasSynonyms ? (
             <div className="text-left m-5">
               <br className="mt-5" />
               <hr className="-ml-5" />
