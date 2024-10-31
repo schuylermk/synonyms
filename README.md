@@ -1,5 +1,6 @@
 # 📚 Quick (and questionable) Thesaurus 📓 
-[thuhh + 🤕 + 🫏](https://schuylermk.github.io/synonyms/)<br/>
+[thuhh + 🤕 + 🫏](https://schuylermk.github.io/synonyms/)<br/><br/>
+
 Code challenge that uses the [Datamuse API](https://www.datamuse.com/api/) to give a (somewhat weak) list of synonyms for a word inputted by the user.
 
 React and TypeScript, and a small handful Tailwind classes for good measure.
